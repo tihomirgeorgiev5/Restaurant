@@ -1,0 +1,21 @@
+﻿@model List<Restaurant.Models.Dish>
+@{
+    ViewData["Title"] = "MenuIndex";
+}
+
+<div class="container">
+    <div class="row">
+        @foreach(var item in Model)
+        {
+            <div class="col-6">
+                    <h4>@item.Name</h4>
+            </div>
+            <div class="col-6">
+                @item.ImageUrl
+            </div>
+            <div class="col-6">
+                @item.Price
+            </div>
+        }
+    </div>
+</div>
