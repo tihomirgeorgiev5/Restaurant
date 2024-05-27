@@ -21,7 +21,7 @@ using Restaurant.Models;
             modelBuilder.Entity<DishIngredient>().HasOne(i => i.Ingredient).WithMany(di => di.DishIngredients).HasForeignKey(i => i.IngredientId);
 
             modelBuilder.Entity<Dish>().HasData(
-                new Dish { Id = 1, Name = "Summer Salad", Price = 11.99, ImageUrl = "http://www.pizza-milenium.com/images/listing_photos/thumb_76_milenium009tttweb.jpg" }
+                new Dish { Id = 1, Name = "Summer Salad", Price = 11.99, ImageUrl = "https://thishealthytable.com/wp-content/uploads/2017/06/ThisMediterraneansummersaladisfullofbrightsummerflavors-scaled.jpeg" }
                 );
             modelBuilder.Entity<Ingredient>().HasData(
                 new Ingredient { Id = 1, Name = "Tomatoes" },
